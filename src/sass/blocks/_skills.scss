@@ -19,7 +19,7 @@
     grid-template-columns: repeat(4, 270px);
     grid-template-rows: repeat(2, minmax(270px, auto));
     grid-auto-rows: minmax(270px, auto);
-    justify-content: space-around;
+    padding: 0 10px;
     gap: 13px;
   }
   &__item {
@@ -63,6 +63,13 @@
     &-descr {
       padding-left: 13px;
       padding-top: 8px;
+      position: relative;
+    }
+    &-circle {
+      position: absolute;
+      @include before_circle;
+      top: 0;
+      left: 0;
     }
     &-percent {
       padding-top: 8px;
